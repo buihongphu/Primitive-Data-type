@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApplication8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ListBox x:Name="type" HorizontalAlignment="Left" Height="169" VerticalAlignment="Top" Width="100" Margin="20,109,0,0" SelectionChanged="typeSelectionChanged" >
+            <ListBoxItem Content="Int"/>
+            <ListBoxItem Content="Long" />
+            <ListBoxItem Content="Float"/>
+            <ListBoxItem Content="Double"/>
+            <ListBoxItem Content="Decimal"/>
+            <ListBoxItem Content="String"/>
+            <ListBoxItem Content="Char"/>
+            <ListBoxItem Content="Bool"/>
+        </ListBox>
+        <TextBox x:Name="value" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="254,109,0,0" />
+        <Button x:Name="quit" Content="Quit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="274,226,0,0" FontWeight="Bold" Click="quit_Click"/>
+        <Label x:Name="primitive_data_types" Content="Primitive Data Types" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,10,0,0" FontWeight="Bold" FontSize="20" Width="231"/>
+        <Label x:Name="choose_a_data_type" Content="choose a data type" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.289,2.346" Margin="20,65,0,0"/>
+        <Label x:Name="Sample_value" Content="Sample value" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="269,65,0,0"/>
+    </Grid>
+</Window>
